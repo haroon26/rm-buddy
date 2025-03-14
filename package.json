@@ -16,6 +16,10 @@
       {
         "command": "rm-buddy.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "rmBuddy.ByeWorld",
+        "title": "Bye World"
       }
     ]
   },
