@@ -12,6 +12,23 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "redmine",
+          "title": "Redmine Buddy",
+          "icon": "resources/redmine.svg"
+        }
+      ]
+    },
+    "views": {
+      "redmine": [
+        {
+          "id": "issues",
+          "name": "Issues"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "rm-buddy.helloWorld",
