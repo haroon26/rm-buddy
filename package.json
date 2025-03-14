@@ -4,7 +4,7 @@
   "description": "",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.97.0"
   },
   "categories": [
     "Other"
@@ -16,10 +16,6 @@
       {
         "command": "rm-buddy.helloWorld",
         "title": "Hello World"
-      },
-      {
-        "command": "rmBuddy.ByeWorld",
-        "title": "Bye World"
       }
     ]
   },
@@ -29,7 +25,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "clean": "rm -rf ./out"
   },
   "devDependencies": {
     "@types/vscode": "^1.98.0",
