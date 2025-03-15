@@ -29,12 +29,7 @@
         }
       ]
     },
-    "commands": [
-      {
-        "command": "rm-buddy.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
