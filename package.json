@@ -25,7 +25,8 @@
       "redmine": [
         {
           "id": "issues",
-          "name": "Issues"
+          "name": "Issues",
+          "type": "webview"
         }
       ]
     },
