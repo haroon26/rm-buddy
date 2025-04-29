@@ -12,12 +12,25 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "rm-buddy.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "redmine",
+          "title": "Redmine Buddy",
+          "icon": "resources/redmine.svg"
+        }
+      ]
+    },
+    "views": {
+      "redmine": [
+        {
+          "id": "issues",
+          "name": "Issues",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -25,7 +38,6 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test",
     "clean": "rm -rf ./out"
   },
   "devDependencies": {
